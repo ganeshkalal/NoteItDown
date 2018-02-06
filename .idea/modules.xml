@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DemoNote.iml" filepath="$PROJECT_DIR$/DemoNote.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NoteItDown.iml" filepath="$PROJECT_DIR$/NoteItDown.iml" />
       <module fileurl="file://$PROJECT_DIR$/StaggeredGridView/StaggeredGridView.iml" filepath="$PROJECT_DIR$/StaggeredGridView/StaggeredGridView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
