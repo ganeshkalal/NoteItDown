@@ -5,19 +5,19 @@ import io.realm.annotations.PrimaryKey
 
 open class NoteRealm : RealmObject {
 
-  lateinit var title: String
-  lateinit var note: String
-  @PrimaryKey
-  var id: Int = 0
-  var color: Int = 0
+    lateinit var title: String
+    lateinit var note: String
+    @PrimaryKey
+    var id: Long = 0
+    var color: Int = 0
 
 
-  constructor()
+    constructor()
 
-  constructor(id: Int, title: String, note: String, color: Int) {
-    this.title = title
-    this.id = id
-    this.note = note
-    this.color = color
-  }
+    constructor(id: Long, title: String, note: String, color: Int) {
+        this.title = title
+        this.id = id
+        this.note = note
+        this.color = color
+    }
 }
