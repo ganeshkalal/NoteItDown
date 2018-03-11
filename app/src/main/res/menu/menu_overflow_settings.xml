@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_theme"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemLightTheme"
+            android:title="@string/item_theme_light" />
+
+        <item
+            android:id="@+id/itemDarkTheme"
+            android:title="@string/item_theme_dark" />
+    </group>
+
+    <!--<item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />-->
+
+</menu>

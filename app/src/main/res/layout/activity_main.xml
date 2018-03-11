@@ -1,39 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-		xmlns:android="http://schemas.android.com/apk/res/android"
-		xmlns:app="http://schemas.android.com/apk/res-auto"
-		xmlns:staggered="http://schemas.android.com/tools"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		>
-	
-	<com.origamilabs.library.views.StaggeredGridView
-			android:id="@+id/staggeredGridView"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			staggered:drawSelectorOnTop="true"
-			staggered:numColumns="2"
-			/>
-	
-	<android.support.design.widget.FloatingActionButton
-			android:id="@+id/floatingActionButton2"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_alignParentBottom="true"
-			android:layout_alignParentEnd="true"
-			android:layout_marginBottom="40dp"
-			android:layout_marginEnd="40dp"
-			android:clickable="true"
-			app:srcCompat="@drawable/ic_add_white_24dp"
-			/>
-	
-	<com.github.fabtransitionactivity.SheetLayout
-			android:id="@+id/bottom_sheet"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:layout_gravity="bottom"
-			android:elevation="2dp"
-			app:ft_color="@color/colorPrimary"
-			app:ft_container_gravity="center"
-			/>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:staggered="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/margin_5dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <com.origamilabs.library.views.StaggeredGridView
+        android:id="@+id/staggeredGridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        staggered:drawSelectorOnTop="true"
+        staggered:numColumns="2" />
+    <!--android:drawSelectorOnTop="true"
+        android:listSelector="@drawable/list_selector"-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/margin_40dp"
+        android:layout_marginEnd="@dimen/margin_40dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/ic_add_white_24dp" />
+
+    <com.github.fabtransitionactivity.SheetLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="bottom"
+        android:elevation="@dimen/margin_2dp"
+        app:ft_color="@color/colorPrimary"
+        app:ft_container_gravity="center" />
 </RelativeLayout>

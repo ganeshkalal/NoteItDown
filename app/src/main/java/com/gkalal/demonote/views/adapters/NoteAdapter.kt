@@ -1,4 +1,4 @@
-package com.gkalal.demonote
+package com.gkalal.demonote.views.adapters
 
 import android.content.Context
 import android.graphics.Color
@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import com.gkalal.demonote.R
+import com.gkalal.demonote.model.NoteData
 
 class NoteAdapter(private val context: Context,
     private val noteList: ArrayList<NoteData>) : BaseAdapter() {
@@ -39,8 +41,8 @@ class NoteAdapter(private val context: Context,
     val textViewNote = view.findViewById(R.id.textViewNote) as AppCompatTextView
     val cardView = view.findViewById(R.id.cardView) as CardView
 
-    textViewTitle.setText(currentItem.title)
-    textViewNote.setText(currentItem.note)
+    textViewTitle.text = currentItem.title
+    textViewNote.text = currentItem.note
     cardView.setCardBackgroundColor(currentItem.color)
 
     changeTheme(currentItem.color, textViewTitle, textViewNote)
@@ -48,9 +50,9 @@ class NoteAdapter(private val context: Context,
     return view
   }
 
-  fun changeTheme(color: Int, textViewTitle: AppCompatTextView,
-      textViewNote: AppCompatTextView) {
-    if (color.equals(Color.BLUE) || color.equals(Color.RED)) {
+  private fun changeTheme(color: Int, textViewTitle: AppCompatTextView,
+                          textViewNote: AppCompatTextView) {
+    if (color == Color.BLUE || color == Color.RED) {
       textViewTitle.setTextColor(Color.WHITE)
       textViewNote.setTextColor(Color.WHITE)
     } else {
