@@ -1,14 +1,14 @@
 # NoteItDown
 NoteItDown is a simple notes app inspired by Google Keep that has been written in Kotlin
 
-# Added Features
+### Added Features
 - Change font size and color of note
 - Notes will be saved with the selected color
 - Ability to switch between light and dark theme
 - Save notes on both back button click and save button click
 - Display notes in staggered gridview
 
-# Upcoming Features
+### Upcoming Features
 - Replace StaggeredGridView with StaggeredGridLayoutManager
 - Single and multiple delete notes
 - Choose between multiple fonts for entire app
@@ -20,7 +20,7 @@ NoteItDown is a simple notes app inspired by Google Keep that has been written i
 - Saving notes from homescreen widget
 - Saving notes from notification shade
 
-# Credits
+### Credits
 - StaggeredGridView library by maurycyw 
 - Calligraphy library by chrisjenx
 - ShiftColorPicker library by DASAR
